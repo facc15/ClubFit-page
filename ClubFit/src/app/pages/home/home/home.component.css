@@ -1,0 +1,412 @@
+
+
+.header{
+    background: url(../../../../assets/gym.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+nav a:active{
+    transform: scale(0.8);
+}
+
+a i:active{
+    transform: scale(0.7);
+}
+
+.menu{
+    background:rgba(0,0,0,.1);
+    background-color: #051125;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.minMargen{
+    padding: 0 30px;
+}
+.pricing-section{
+    background-color: #051125;
+}
+
+.cardPro{
+    background-color: #cd0d69;
+}
+
+.cardAdvance{
+    background-color: #ad1267;
+}
+
+.logo{
+    margin-left: 5px;
+    flex: 5 1 auto;
+
+}
+    .logo a{
+        color:#fff;
+        font-size: 30px;
+
+    }
+    .logo a:hover{
+        color:#cd0d69;
+
+    }
+
+.nav{
+
+    flex: 4 1 auto;
+
+}
+    nav a{
+        color:#fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+    .nav a:hover{
+        color:#cd0d69;
+    }
+
+.social{
+
+    flex: 1 1 auto;
+    display: flex;
+
+}
+    .social a{
+        font-size: 18px;
+        color:#fff;
+        padding: 0 5px;
+    }
+    .social a:hover{
+        color:#cd0d69;
+    }
+
+.principal-text{
+    color:#fff;
+    height: 580px;
+    display: flex;
+    align-items: center;
+    -webkit-text-stroke: 2px black;
+}
+h1{
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+.intro{
+    background-color: #cd0d69;
+    -webkit-text-stroke: 2px black;
+}
+.examples{
+    justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #051125;
+      padding: 50px;
+}
+
+
+.examples .col {
+
+    margin-bottom: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+.row{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nope{
+    background: url(../../../../assets/nope.png);
+    background-clip: border-box;
+    background-color: #fff;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    border: 1px solid #fff;
+    height: 200px;
+    width: 100px;
+    color:#fff;
+    border-radius: 10%;
+    margin: 10px;  
+    font-size: 20px;
+    font-weight: bold;
+    color:#051125;
+    position: relative;
+    padding: 20px;
+
+}
+
+.section-videos{
+    background-color: #051125;
+    height: 760px;
+    border: 2px solid #ad1267;
+}
+
+.videos{
+    height: 760px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.video-container{
+    width: 100%;
+    height: 550px;
+    margin-bottom:5px;
+}
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.miVideo{
+    border: 2px solid #ad1267;
+
+
+}
+
+
+
+#contador-section{
+    background-color: #051125;
+
+    
+}
+
+.contador{
+    border: 5px solid #cd0d69;
+    line-height: 2; /* Esto establece un interlineado doble */
+    padding: 10px;
+}
+.miCard{
+    background-color: #cd0d69;
+    margin: 5px;
+    color:#fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: 1px solid #fff;
+    line-height: 2; /* Esto establece un interlineado doble */
+    padding: 10px; 
+    font-weight: bold;
+}
+
+.miBtn{
+    height: auto;
+    background-color: #cd0d69;
+    color:#fff;
+    width: 100%;
+
+    font-size: 30px;
+}
+
+.miBtn:hover{
+    background-color: #ad1267;
+    color: #051125;
+    -webkit-text-stroke: 1px #051125;
+}
+
+
+
+.rowQ{
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+
+}
+
+.colQ{
+
+    margin-top: 20px;
+    border: 3px solid #051125;
+    padding: 10px;
+}
+
+.imgQ{
+    background-color: #fff;
+    max-width: 100%; 
+}
+.imgQ img{
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    max-width: 100%; 
+    height: auto; 
+    
+}
+
+.question-toggle {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #8f9092;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .question{
+    color: #ad1267;
+
+  }
+  
+  .question-toggle:hover {
+    color:#fff;
+  }
+  
+  .icon {
+    font-size: 16px;
+  }
+.answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 20px;
+
+  }
+  
+  .answer.active {
+    display: block;
+  }
+
+
+.faq{
+    background-color: #051125;
+}
+
+.faq-section {
+    margin: 0 auto;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .faq-list li {
+    margin-bottom: 10px;
+  }
+  
+  .faq-list a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+  }
+  
+
+  .testimonies-section{
+    margin: 0 auto;
+    background-color: #ad1267;
+    border: 3px solid #051125;
+  }
+  .testimonies{
+    max-width: 800px;
+    border: 2px solid #051125;
+   
+  }
+  
+  .testimony {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(212, 214, 214);
+
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .stars {
+    color: gold; /* Cambia el color según tus preferencias */
+    font-size: 24px;
+    -webkit-text-stroke: 2px #000;
+  }
+
+
+
+  footer{
+    background-color: #051125;
+  }
+
+/*
+#cd0d69 (PRINCIPAL)
+#051125 (PRINCIPAL)
+#ad1267 (SECUNDARIO)
+#ffffff (BLANCO)
+#ff0f7b (TERCERA OPCIÓN)
+*/
+
+@media all and (max-width:1199px){
+
+    .nope{
+        padding: 70px;
+        height: 700px;
+        font-size: 40px;
+    }
+}
+
+
+
+@media all and (max-width:1085px){
+
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nope{
+        padding: 90px;
+        width: 400px;
+        margin: 30px;
+        font-size: 40px;
+    }
+    .miBtn{
+        font-size: 40px;
+        height: 90px;
+    }
+
+}
+
+@media all and (max-width:558px){
+
+    .nav{
+        flex-direction: column;
+        height: auto;
+    }
+    .social{
+        flex-direction: column;
+        height: auto; 
+    }
+    .nav a{
+        font-size: 60px;
+        border-bottom: 1px solid #fff;
+    }
+    .social a{
+        font-size: 60px;
+    }
+    .nope{
+
+        font-size: 30px;
+ 
+    }
+
+    
+}
