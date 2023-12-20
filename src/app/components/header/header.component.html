@@ -1,21 +1,21 @@
 <div class="menu">
     <div class="logo">
-        <img src="../../../../assets/clubfit2.png" height="200px" width="250px" alt="">
+        <img src="../../../../assets/clubfit2.png" routerLink="" height="200px" width="250px" alt="">
     </div>
     <nav class="nav">
-        <a class="m-2 text-decoration-none" routerLink="pages/coaching-online" >
+        <a class="m-2 text-decoration-none" (click)="this.goToCoaching()">
             <i class="fa fa-home" aria-hidden="true"></i>
             Coaching online</a>
-        <a class="m-2 text-decoration-none" href="#">
+        <a class="m-2 text-decoration-none" (click)="this.goToAboutMe()">
             <i class="fa fa-user" aria-hidden="true"></i>
             Quién soy?</a>
-        <a class="m-2 text-decoration-none" href="#">
+        <a class="m-2 text-decoration-none" (click)="this.gotToTiendUp()" >
             <i class="fa fa-comments" aria-hidden="true"></i>
             Tiend (tiend up)</a>
-        <a class="m-2 text-decoration-none" href="#">
+        <a class="m-2 text-decoration-none" (click)="this.goToBlog()">
             <i class="fa fa-file-text" aria-hidden="true"></i>
             Blog</a>
-        <a class="m-2 text-decoration-none" href="#">
+        <a class="m-2 text-decoration-none" (click)="this.goToFree()">
             <i class="fa fa-envelope" aria-hidden="true"></i>
             Gratarola</a>
 

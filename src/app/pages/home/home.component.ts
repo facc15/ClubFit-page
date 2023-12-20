@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HeaderModule } from '../../../components/header/header.module';
+import { HeaderModule } from '../../components/header/header.module';
 
 export class FaqItem{
 

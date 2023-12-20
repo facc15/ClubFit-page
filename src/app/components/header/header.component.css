@@ -1,6 +1,10 @@
 a{
     text-decoration: none;
 }
+
+a:hover{
+    cursor: pointer;
+}
 .menu{
     background:rgba(0,0,0,.1);
     background-color: #051125;
@@ -15,7 +19,11 @@ a{
 .logo{
     margin-left: 5px;
     flex: 5 1 auto;
+    overflow:auto;
+}
 
+.logo img:hover{
+    cursor: pointer;
 }
     .logo a{
         color:#fff;
@@ -24,7 +32,6 @@ a{
     }
     .logo a:hover{
         color:#cd0d69;
-
     }
 
 
