@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 
 
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[]
 })
-export class HomeModule { }
+export class PagesModule { }

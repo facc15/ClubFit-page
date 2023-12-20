@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HeaderModule } from '../../../components/header/header.module';
 
 export class FaqItem{
 
@@ -10,15 +11,14 @@ export class FaqItem{
   
 }
 
-
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
-  imports:[FormsModule,CommonModule] ,
+  imports:[FormsModule,CommonModule,HeaderModule] ,
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit{
+export default class HomeComponent implements OnInit{
 
 
   public days!:number;

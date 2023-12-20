@@ -10,6 +10,7 @@
 a{
     text-decoration: none;
 }
+
 nav a:active{
     transform: scale(0.8);
 }
@@ -18,16 +19,6 @@ a i:active{
     transform: scale(0.7);
 }
 
-.menu{
-    background:rgba(0,0,0,.1);
-    background-color: #051125;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    height: 80px;
-    align-items: center;
-    border-bottom: 1px solid rgba(255,255,255,.5);
-}
 .minMargen{
     padding: 0 30px;
 }
@@ -43,25 +34,9 @@ a i:active{
     background-color: #ad1267;
 }
 
-.logo{
-    margin-left: 5px;
-    flex: 5 1 auto;
-
-}
-    .logo a{
-        color:#fff;
-        font-size: 30px;
-
-    }
-    .logo a:hover{
-        color:#cd0d69;
-
-    }
-
 .nav{
 
     flex: 4 1 auto;
-
 }
     nav a{
         color:#fff;
@@ -74,28 +49,35 @@ a i:active{
         color:#cd0d69;
     }
 
-.social{
 
-    flex: 1 1 auto;
+.imgAle{
     display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    width: 500px;
+} 
 
+.imgAle img{
+    margin-top: auto !important;
+    align-self: flex-start;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra alrededor de la imagen */
 }
-    .social a{
-        font-size: 18px;
-        color:#fff;
-        padding: 0 5px;
-    }
-    .social a:hover{
-        color:#cd0d69;
-    }
 
 .principal-text{
-    color:#fff;
+    color:#ad1267;
     height: 580px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end !important;
     -webkit-text-stroke: 2px black;
 }
+
+.large-text{
+    font-size: 22px; 
+    color:#fff;
+}
+
 h1{
     font-size: 17px;
     font-weight: 300;
@@ -366,12 +348,6 @@ h1{
 
 
 @media all and (max-width:1085px){
-
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
-
     .nope{
         padding: 90px;
         width: 400px;
@@ -391,17 +367,12 @@ h1{
         flex-direction: column;
         height: auto;
     }
-    .social{
-        flex-direction: column;
-        height: auto; 
-    }
+
     .nav a{
         font-size: 60px;
         border-bottom: 1px solid #fff;
     }
-    .social a{
-        font-size: 60px;
-    }
+
     .nope{
 
         font-size: 30px;
