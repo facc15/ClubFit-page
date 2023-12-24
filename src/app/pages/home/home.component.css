@@ -1,7 +1,7 @@
 
 
 .header{
-    background: url(../../../../assets/gym.png);
+    background: url(../../../assets/gym.png);
     background-position: center;
     background-attachment: contain;
     background-size: cover;
@@ -113,7 +113,7 @@ h1{
 }
 
 .nope{
-    background: url(../../../../assets/nope.png);
+    background: url(../../../assets/nope.png);
     background-clip: border-box;
     background-color: #fff;
     background-position: center;
@@ -121,7 +121,7 @@ h1{
     background-size: cover;
     border: 1px solid #fff;
     height: 200px;
-    width: 100px;
+    width: 150px;
     color:#fff;
     border-radius: 10%;
     margin: 10px;  

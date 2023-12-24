@@ -45,17 +45,18 @@ export default class HomeComponent implements OnInit{
 
   ngOnInit()
   {
+
     this.renderer.listen("document",'DOMContentLoaded', ()=> {
       // Define la fecha de inicio
       const fechaInicio:Date = new Date('2024-01-08T00:00:00');
+    
+        console.log("entramo "); 
     
       // Actualiza el contador cada segundo
       setInterval(()=> {
         var ahora = new Date();
         var diferencia  = fechaInicio.getTime() - ahora.getTime();
 
-        
-    
         var dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
         var horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
