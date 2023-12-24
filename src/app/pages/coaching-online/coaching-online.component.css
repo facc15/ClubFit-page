@@ -12,21 +12,24 @@
 }
 
 .imgCont {
+    width: 600px;
     display: flex;
-    flex-direction: column;
-    margin-right: 8px;
-    width: 500px;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
+    height: auto;
+    
+    padding:5px;
+    margin-left: 30px;
+    box-shadow: 0 0 20px #fff;
+    border-radius: 2%;  
   }
 
 .imgCont img {
-  width: 100%;
-  align-self: center; /* Centra la imagen verticalmente */
+  width: 50%;
+  padding:8px;
   height: 500px;
-  box-shadow: 10px rgba(0, 0, 0, 0.5); /* Añade una sombra alrededor de la imagen */
+
+
 }
 
 
