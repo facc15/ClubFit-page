@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit()
   {
-    this.router.navigateByUrl("entrenamiento");
+    this.router.navigateByUrl("home");
   }
 
 }
