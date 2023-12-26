@@ -1,0 +1,30 @@
+.row{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    height: 180px;
+}
+
+
+.ig{
+    color:#fff;
+    font-size: 50px;
+}
+
+.igSmall{
+    color:#fff;
+    font-size: 20px;
+}
+
+.ig:hover{
+    color:#ad1267;
+    cursor:pointer;
+}
+
+.igSmall:hover{
+    color:#ad1267;
+}
+

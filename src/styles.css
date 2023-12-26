@@ -1,9 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
     background-color: #051125;
     display: flex;
     flex-flow: column nowrap;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    filter:drop-shadow(8px 8px 12px black);
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+  footer{
+    background-color: #051125;
+  }

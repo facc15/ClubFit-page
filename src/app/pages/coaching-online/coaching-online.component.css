@@ -12,7 +12,7 @@
 }
 
 .imgCont {
-    width: 600px;
+    width: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,6 +121,7 @@ h1{
     background-color: #cd0d69;
     margin: 5px;
     color:#fff;
+    width: 200px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -146,16 +147,6 @@ h1{
     color: #051125;
     -webkit-text-stroke: 1px #051125;
 }
-
-
-.ig{
-    color:#ad1267;
-    font-size: 50px;
-}
-
-
-
-
 
 @media all and (max-width:1085px){
 

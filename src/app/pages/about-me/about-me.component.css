@@ -1,0 +1,16 @@
+.container {
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2,h3, p {
+    color: #ffffff; /* Color blanco para el texto */
+    -webkit-text-stroke: 1px #ad1267; /* Borde del texto con color #ad1267 (para navegadores basados en WebKit como Chrome y Safari) */
+    --text-stroke: 1px #ad1267; /* Bor
+    padding: 10px; /* Espaciado interno para mejorar la legibilidad */
+  }

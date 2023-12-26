@@ -1,0 +1,7 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #051125;
+    display: flex;
+    flex-flow: column nowrap;
+}

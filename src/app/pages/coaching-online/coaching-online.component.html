@@ -92,7 +92,7 @@
       <div class="miCard col-xl-2 col-lg-8 col-md-8 col-sm-8 col-8  d-flex">
         <span><span >{{this.days}}</span> Días</span>
       </div>
-      <div class="miCard col-xl-2 col-lg-8 col-md-8 col-sm-8 col-8  d-flex text-align-center">  
+      <div class="miCard col-xl-2 col-lg-8 col-md-8 col-sm-8 col-8  d-flex">  
     
           <span> <span >{{this.hours}}</span> Horas</span>
       </div>
@@ -161,7 +161,7 @@
                 <li>Priority email support</li>
                 <li>Help center access</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg cardBasic">Descarga plan básico</button>
+              <button type="button" class="w-100 btn btn-lg cardBasic" (click)="this.goToTraining()">Descarga plan básico</button>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@
                 <li>Phone and email support</li>
                 <li>Help center access</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg cardPro">Descarga plan Pro</button>
+              <button type="button" class="w-100 btn btn-lg cardPro"  (click)="this.goToTrainingNutrition()">Descarga plan Pro</button>
             </div>
           </div>
         </div>
@@ -279,31 +279,4 @@
     </main>
     </section>
     
-
-
-    <section class="footer">
-
-        <div >
-            <footer class="p-4 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <img src="../../../assets/clubfit4.png" width="100px" height="100px" alt="">
-                <span class="mb-3 mb-md-0 text-light" stlye="font-size:40px">© 2023 Fakeitor Company, Inc</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-              </ul>
-
-              <div  class="col-md-4 d-flex p-5 justify-content-end">
-                <button class="btn btn-block btn-lg">
-                    <i class="fa fa-instagram ig" aria-hidden="true"></i>
-                </button>
-              </div>
-
-
-            </footer>
-          </div>
-
-    </section>
+    <app-footer [footer]="2"></app-footer>

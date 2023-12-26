@@ -5,6 +5,8 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { TiendComponent } from './pages/tiend/tiend.component';
 import { FreeComponent } from './pages/free/free.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { TrainingComponent } from './pages/training/training.component';
+import { TrainingNutritionComponent } from './pages/training-nutrition/training-nutrition.component';
 
 
 
@@ -15,29 +17,39 @@ export const routes: Routes = [
         loadComponent: ()=> import("./pages/home/home.component"),
     },
     {
-        path: 'pages/coaching-online',
+        path: 'coaching-online',
         title: 'Coaching online',
         component:CoachingOnlineComponent
     },
     {
-        path: 'pages/tiend-up',
+        path: 'tiend-up',
         title: 'TiendUp',
         component:TiendComponent
     },
     {
-        path: 'pages/gratarola',
+        path: 'gratarola',
         title: 'Gratarola',
         component:FreeComponent
     },
     {
-        path: 'pages/blogs',
+        path: 'blogs',
         title: 'Blogs',
         component:BlogComponent
     },
     {
-        path: 'pages/quien-soy',
+        path: 'quien-soy',
         title: 'Quien soy?',
         component:AboutMeComponent
+    },
+    {
+        path: 'entrenamiento',
+        title: 'Entrenamiento',
+        component:TrainingComponent
+    },
+    {
+        path: 'entrenamiento-nutricion',
+        title: 'Entrenamiento - Nutrición',
+        component:TrainingNutritionComponent
     },
     {
         path:'',

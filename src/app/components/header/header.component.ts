@@ -14,25 +14,25 @@ export class HeaderComponent {
 
   goToCoaching()
   {
-    this.router.navigateByUrl('pages/coaching-online');
+    this.router.navigateByUrl('coaching-online');
   }
   goToAboutMe()
   {
-    this.router.navigateByUrl('pages/quien-soy');
+    this.router.navigateByUrl('quien-soy');
   }
 
   gotToTiendUp()
   {
-    this.router.navigateByUrl('pages/tiend-up');
+    this.router.navigateByUrl('tiend-up');
   }
 
   goToBlog()
   {
-    this.router.navigateByUrl('pages/blogs');
+    this.router.navigateByUrl('blogs');
   }
 
   goToFree()
   {
-    this.router.navigateByUrl('pages/gratarola');
+    this.router.navigateByUrl('gratarola');
   }
 }

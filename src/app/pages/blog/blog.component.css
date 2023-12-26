@@ -1,0 +1,55 @@
+
+.sectionBlogs{
+    background: #777d31;
+    
+    height: 500px;
+    display: flex;
+}
+.blogs{
+    background: #fff;
+    flex: 2 1 auto;
+
+    margin: 5px;
+    flex-flow: row wrap;
+}
+.blog{
+    background: rgb(109, 130, 243);
+    flex:1 1 auto;
+
+
+}
+
+article img{
+    height: auto;
+}
+
+.aside{
+    background: #08373e;
+    flex:1 1 auto;
+}
+
+.publicity{
+    background: #777d31;
+    height: 20px;
+    margin: 5px;
+}
+
+@media all and (max-width:600px){
+    .sectionBlogs{
+        flex-direction: column;
+    }
+
+    .blogs{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:400px){
+    .aside{
+        flex-direction: column;
+    }
+}

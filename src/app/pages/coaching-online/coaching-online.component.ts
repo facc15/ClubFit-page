@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { HeaderModule } from '../../components/header/header.module';
 import { Router } from '@angular/router';
+import { FooterModule } from '../../components/footer/footer.module';
 
 @Component({
   selector: 'app-coaching-online',
   standalone:true,
-  imports: [CommonModule,HeaderModule], 
+  imports: [CommonModule,HeaderModule,FooterModule], 
   templateUrl: './coaching-online.component.html',
   styleUrl: './coaching-online.component.css'
 })
@@ -54,9 +55,18 @@ export default class CoachingOnlineComponent  implements OnInit,OnDestroy{
 
   goToFree()
   {
-    this.router.navigateByUrl('pages/gratarola');
+    this.router.navigateByUrl('gratarola');
   }
 
+  goToTraining()
+  {
+    this.router.navigateByUrl("entrenamiento");
+  }
+
+  goToTrainingNutrition()
+  {
+    this.router.navigateByUrl("entrenamiento-nutricion");
+  }
   
 
 }

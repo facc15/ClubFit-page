@@ -2,20 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HeaderModule } from '../../components/header/header.module';
-
-export class FaqItem{
-
-  question!:string;
-  answer!:string; 
-  expanded!: boolean;
-  
-}
+import { FooterModule } from '../../components/footer/footer.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
-  imports:[FormsModule,CommonModule,HeaderModule] ,
+  imports:[FormsModule,CommonModule,HeaderModule,FooterModule] ,
   styleUrl: './home.component.css'
 })
 export default class HomeComponent implements OnInit{
@@ -27,15 +20,6 @@ export default class HomeComponent implements OnInit{
   public seconds!:number;
   public diferencia!:Date;
 
-  faqItems :FaqItem[]= [
-    { question: 'Pregunta 1', answer: 'Respuesta 1',expanded:false },
-    { question: 'Pregunta 2', answer: 'Respuesta 2',expanded:false },
-
-  ];
-
-  toggleAnswer(index: number): void {
-    this.faqItems[index].expanded = !this.faqItems[index].expanded;
-  }
 
   constructor(private renderer: Renderer2)
   {

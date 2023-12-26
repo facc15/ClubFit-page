@@ -1,0 +1,100 @@
+<app-header></app-header>
+<div  class="training">
+    <!--SECTION VIDEO-->
+<section>
+
+    <div class="contVideo">
+        <h1 class="text-light">Entrenamiento</h1>
+
+        <div class="video">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/_9bw_VtMUGA?si=hCRyXdwx7vTyt7Sh" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             allowfullscreen>
+    
+            </iframe>
+        </div>
+    </div>
+</section>
+</div>
+
+<div class="hipthrust">
+<section class="nutrition">
+
+    <div class="row  mt-5">
+        <div class="col-6 d-flex justify-content-end">
+            <img src="../../../assets/nutrition.png"  height="180px" width="250px" alt="">
+        </div>
+        <div class="col-6 justify-content-start" >
+                <h2  class="title">Nutrición</h2>
+                <p>1. punto a</p>
+                <p>2. punto b</p>
+                <p>3. punto c</p>
+                <p>4. punto d</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="plan-training">
+
+    <div class="row  mt-5">
+        <div class="col-6 d-flex justify-content-end">
+            <img src="../../../assets/manWoman.png" height="180px" width="250px" alt="">
+        </div>
+        <div class="col-6 justify-content-start">
+                <h2 class="title">Entrenamiento</h2>
+                <p>1. punto a</p>
+                <p>2. punto b</p>
+                <p>3. punto c</p>
+                <p>4. punto d</p>
+        </div>
+    </div>
+
+</section>
+</div>
+
+<!-- SECTION PREGUNTAS -->
+<section class="faq">
+
+    <div class="row d-flex">
+        <div class="p-4 col d-flex justify-content-center text-center text-light">
+            <h2>Preguntas Frecuentes</h2>
+        </div>
+    </div>
+  
+    <div class="row rowQ d-flex faq-section">
+  
+        <div class="imgQ col-md-5 d-flex">
+            <img src="./assets/question.jpeg" alt="">
+        </div>
+  
+        <div class="colQ col-md-6 d-flex lista">
+          <div class="faq-list">
+            <div *ngFor="let faqItem of faqItems; let i = index" class="faq-list-item">
+              <div class="faq-question" (click)="toggleAnswer(i)">
+                <span class="arrow m-2" [class.expanded]="faqItem.expanded">
+                    <i *ngIf="!faqItem.expanded" class="fas fa-arrow-right"></i>
+                    <i *ngIf="faqItem.expanded" class="fas fa-arrow-up"></i>
+                  </span>
+                {{ faqItem.question }}  
+            
+              </div>
+              <div class="faq-answer text-light" *ngIf="faqItem.expanded">
+                {{ faqItem.answer }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex">
+        <div class="m-5 p-4 col d-flex justify-content-center text-center text-light">
+            <h2>¡Listo para rockear? Ahora sí, ¡a darle con todo!</h2>
+        </div>
+    </div>
+  
+</section>
+<app-footer></app-footer>
