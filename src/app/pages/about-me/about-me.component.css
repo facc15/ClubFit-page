@@ -14,3 +14,60 @@
     --text-stroke: 1px #ad1267; /* Bor
     padding: 10px; /* Espaciado interno para mejorar la legibilidad */
   }
+
+  .row{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nope{
+  background: url(../../../assets/nope.png);
+  background-clip: border-box;
+  background-color: #fff;
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  border: 1px solid #fff;
+  height: 200px;
+  width: 200px;
+  color:#fff;
+  border-radius: 10%;
+  margin: 10px;  
+  font-size: 20px;
+  font-weight: bold;
+  color:#051125;
+  position: relative;
+  padding: 20px;
+
+}
+
+@media all and (max-width:1199px){
+
+  .nope{
+      padding: 70px;
+      height: 700px;
+      font-size: 40px;
+  }
+
+}
+
+@media all and (max-width:1085px){
+  .nope{
+      padding: 90px;
+      width: 400px;
+      margin: 30px;
+      font-size: 40px;
+  }
+}
+
+@media all and (max-width:558px){
+
+
+  .nope{
+
+      font-size: 30px;
+
+  }
+}

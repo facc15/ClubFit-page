@@ -5,6 +5,7 @@
     background-position: center;
     background-attachment: contain;
     background-size: cover;
+    height: auto;
 }
 
 a{
@@ -51,7 +52,7 @@ a i:active{
 
 .principal-text{
     color:#ad1267;
-    height: 580px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-end !important;
@@ -97,29 +98,6 @@ h1{
 
 }
 
-
-
-
-.nope{
-    background: url(../../../assets/nope.png);
-    background-clip: border-box;
-    background-color: #fff;
-    background-position: center;
-    background-attachment: contain;
-    background-size: cover;
-    border: 1px solid #fff;
-    height: 200px;
-    width: 150px;
-    color:#fff;
-    border-radius: 10%;
-    margin: 10px;  
-    font-size: 20px;
-    font-weight: bold;
-    color:#051125;
-    position: relative;
-    padding: 20px;
-
-}
 
 .section-videos{
     background-color: #051125;
@@ -282,33 +260,7 @@ h1{
   }
   
 
-  .testimonies-section{
-    margin: 0 auto;
-    background-color: #ad1267;
-    border: 3px solid #051125;
-  }
-  .testimonies{
-    max-width: 800px;
-    border: 2px solid #051125;
-   
-  }
-  
-  .testimony {
-    margin: 20px;
-    padding: 10px;
-    background-color: rgb(212, 214, 214);
 
-  }
-  
-  .name {
-    font-weight: bold;
-  }
-  
-  .stars {
-    color: gold; /* Cambia el color según tus preferencias */
-    font-size: 24px;
-    -webkit-text-stroke: 2px #000;
-  }
 
 
 /*
@@ -321,10 +273,8 @@ h1{
 
 @media all and (max-width:1199px){
 
-    .nope{
-        padding: 70px;
-        height: 700px;
-        font-size: 40px;
+    .header{
+        height: auto;
     }
 }
 
@@ -340,6 +290,9 @@ h1{
     .miBtn{
         font-size: 40px;
         height: 90px;
+    }
+    .header{
+        height: auto;
     }
 
 }
@@ -360,6 +313,9 @@ h1{
 
         font-size: 30px;
  
+    }
+    .header{
+        height: auto;
     }
 
     
