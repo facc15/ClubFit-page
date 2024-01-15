@@ -160,7 +160,8 @@
 .testimonies-section{
   margin: 0 auto;
   background-color: #ad1267;
-  border: 3px solid #051125;
+  border-top: 2px  solid #fff;
+  border-bottom: 2px  solid #fff;
 }
 .testimonies{
   max-width: 800px;
@@ -170,7 +171,7 @@
 
 .testimony {
   margin: 20px;
-  padding: 10px;
+ padding: 10px;
   background-color: rgb(212, 214, 214);
 
 }

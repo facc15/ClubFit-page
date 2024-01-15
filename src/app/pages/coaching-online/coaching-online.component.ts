@@ -3,6 +3,7 @@ import { Component, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { HeaderModule } from '../../components/header/header.module';
 import { Router } from '@angular/router';
 import { FooterModule } from '../../components/footer/footer.module';
+import { BEHAVIOR, CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-coaching-online',
@@ -21,14 +22,18 @@ export default class CoachingOnlineComponent  implements OnInit,OnDestroy{
   public diferencia!:Date;
   private intervalId: any;
 
-  constructor(private router:Router)
+  constructor(private router:Router,private commonService:CommonService)
   {
 
   }
 
+  ngAfterViewInit(): void {
+    this.commonService.scrollTo('header', BEHAVIOR.auto)
+  }
+
   ngOnInit()
   {
-    const fechaInicio: Date = new Date('2024-01-08T00:00:00');
+    const fechaInicio: Date = new Date('2024-02-01T00:00:00');
 
     this.intervalId = setInterval(() => {
       var ahora = new Date();

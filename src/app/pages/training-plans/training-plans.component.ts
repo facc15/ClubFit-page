@@ -3,11 +3,12 @@ import { HeaderModule } from '../../components/header/header.module';
 import { FooterModule } from '../../components/footer/footer.module';
 import { FaqItem } from '../../classes/faq-item';
 import { CommonModule } from '@angular/common';
+import { AreyoureadyComponent } from '../../components/areyouready/areyouready.component';
 
 @Component({
   selector: 'app-training-plans',
   standalone: true,
-  imports: [HeaderModule,FooterModule,CommonModule],
+  imports: [HeaderModule,FooterModule,CommonModule,AreyoureadyComponent],
   templateUrl: './training-plans.component.html',
   styleUrl: './training-plans.component.css'
 })

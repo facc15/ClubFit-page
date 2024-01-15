@@ -1,0 +1,27 @@
+.miBtn{
+    background-color:#ad1267;
+    border-radius: 5%;
+    width: 70%; /* o width: auto; */
+    height: 100px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.back{
+    height: auto;
+    color: white; /* Color del texto */
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url('../../../assets/manWoman.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 50vh;       
+    padding: 10px; 
+    border-bottom:1px solid #fff;
+}
+
+.miBtn:hover{
+    background-color: #051125;
+    color:#fff;
+}
