@@ -23,4 +23,9 @@ export class AppComponent implements OnInit {
     //this.router.navigateByUrl("entrenamiento");
   }
 
+  onActivate()
+  {
+    window.scroll(0,0);
+  }
+
 }

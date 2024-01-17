@@ -3,12 +3,13 @@ import { Component, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { HeaderModule } from '../../components/header/header.module';
 import { Router } from '@angular/router';
 import { FooterModule } from '../../components/footer/footer.module';
-import { BEHAVIOR, CommonService } from '../../services/common.service';
+import { TooltipDirective } from '../../directives/tooltip.directive';
+
 
 @Component({
   selector: 'app-coaching-online',
   standalone:true,
-  imports: [CommonModule,HeaderModule,FooterModule], 
+  imports: [CommonModule,HeaderModule,FooterModule,TooltipDirective], 
   templateUrl: './coaching-online.component.html',
   styleUrl: './coaching-online.component.css'
 })
@@ -22,13 +23,9 @@ export default class CoachingOnlineComponent  implements OnInit,OnDestroy{
   public diferencia!:Date;
   private intervalId: any;
 
-  constructor(private router:Router,private commonService:CommonService)
+  constructor(private router:Router)
   {
 
-  }
-
-  ngAfterViewInit(): void {
-    this.commonService.scrollTo('header', BEHAVIOR.auto)
   }
 
   ngOnInit()

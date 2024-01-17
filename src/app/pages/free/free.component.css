@@ -1,0 +1,12 @@
+.free{
+    height: auto;
+    color: white; /* Color del texto */
+    --opacidad-negro: 0.8;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url('../../../assets/action.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 50vh;       
+    border-bottom:2px solid #fff;
+}
