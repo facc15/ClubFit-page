@@ -23,7 +23,7 @@ export class HeaderComponent {
 
   gotToTiendUp()
   {
-    this.router.navigateByUrl('tiend-up');
+    
   }
 
   goToBlog()

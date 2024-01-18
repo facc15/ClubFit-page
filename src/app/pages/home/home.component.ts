@@ -3,12 +3,13 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HeaderModule } from '../../components/header/header.module';
 import { FooterModule } from '../../components/footer/footer.module';
+import { AreyoureadyComponent } from '../../components/areyouready/areyouready.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
-  imports:[FormsModule,CommonModule,HeaderModule,FooterModule] ,
+  imports:[FormsModule,CommonModule,HeaderModule,FooterModule,AreyoureadyComponent] ,
   styleUrl: './home.component.css'
 })
 export default class HomeComponent implements OnInit{
