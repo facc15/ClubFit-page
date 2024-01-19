@@ -19,6 +19,7 @@
     min-height: 50vh;       
     padding: 10px; 
     border-bottom:1px solid #fff;
+    border-top:1px solid #fff;
 }
 
 .miBtn:hover{

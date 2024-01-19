@@ -80,6 +80,7 @@ h1{
       flex-wrap: wrap;
       background-color: #051125;
       padding: 50px;
+      margin-top: 5px;
 }
 
 
@@ -102,7 +103,8 @@ h1{
 .section-videos{
     background-color: #051125;
     height: 760px;
-    border: 2px solid #ad1267;
+    border-top: 1px solid #fff;
+    margin-top: 5px;
 }
 
 .videos{

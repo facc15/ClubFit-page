@@ -4,12 +4,13 @@ import { HeaderModule } from '../../components/header/header.module';
 import { Router } from '@angular/router';
 import { FooterModule } from '../../components/footer/footer.module';
 import { TooltipDirective } from '../../directives/tooltip.directive';
+import { AreyoureadyComponent } from '../../components/areyouready/areyouready.component';
 
 
 @Component({
   selector: 'app-coaching-online',
   standalone:true,
-  imports: [CommonModule,HeaderModule,FooterModule,TooltipDirective], 
+  imports: [CommonModule,HeaderModule,FooterModule,TooltipDirective,AreyoureadyComponent], 
   templateUrl: './coaching-online.component.html',
   styleUrl: './coaching-online.component.css'
 })

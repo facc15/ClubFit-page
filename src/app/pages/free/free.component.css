@@ -1,3 +1,21 @@
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333;           /* Cambia el color del texto, puedes usar el valor que desees */
+}
+
+
+.blog:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.blog:hover h3,.blog:hover p {
+    color: #fff;  /* Cambia el color del texto al pasar el mouse sobre el artículo */
+}
+
+
+
+
 .free{
     height: auto;
     color: white; /* Color del texto */
@@ -21,10 +39,7 @@
     height: auto;
     color: white; /* Color del texto */
     --opacidad-negro: 0.8;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url('../../../assets/manWoman.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: #051125;
     width: 100%;
     min-height: 50vh;       
     padding: 10px; 

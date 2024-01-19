@@ -1,3 +1,20 @@
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333;           /* Cambia el color del texto, puedes usar el valor que desees */
+}
+
+
+.blog:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.blog:hover h3,.blog:hover p {
+    color: #fff;  /* Cambia el color del texto al pasar el mouse sobre el artículo */
+}
+
+
+
 
 .sectionBlogs{
     display: flex;
@@ -23,6 +40,7 @@
 .blog img{
     padding:5px;
     width: 100%;
+    height: 300px;
 }
 
 .aside{
@@ -72,4 +90,8 @@ h2{
         flex-direction: column;
     }
 
+}
+
+article:hover{
+    cursor: pointer;
 }
