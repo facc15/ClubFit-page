@@ -10,8 +10,7 @@ a:hover{
     background-color: #051125;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    height: 80px;
+    height: auto;
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255,.5);
 }
@@ -36,7 +35,12 @@ a:hover{
 
 
 nav a:active{
-    transform: scale(0.8);
+    transform: scale(0.9);
+}
+
+
+button:active{
+    transform: scale(0.9);
 }
 
 .nav{
@@ -61,7 +65,7 @@ nav a:active{
     
 }
         .social a{
-            font-size: 18px;
+            font-size: 17px;
             color:#fff;
             padding: 0 5px;
         }
@@ -69,8 +73,17 @@ nav a:active{
             color:#cd0d69;
         }
     
-    
+        @media all and (max-width:1070px){
 
+       
+            a{
+                margin-top: 17px;
+            }
+            nav a{
+                font-size: 20px;
+            }
+        }  
+/*
     
 @media all and (max-width:558px){
 
@@ -98,11 +111,4 @@ nav a:active{
 
     
 }
-
-@media all and (max-width:1085px){
-
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
-}
+*/
